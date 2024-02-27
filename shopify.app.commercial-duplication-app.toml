@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "48aec87c7aa7abdaf6478f4971372697"
+name = "commercial-duplication-app"
+application_url = "https://entertainment-glasses-serious-digital.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-933f6860.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://entertainment-glasses-serious-digital.trycloudflare.com/auth/callback",
+  "https://entertainment-glasses-serious-digital.trycloudflare.com/auth/shopify/callback",
+  "https://entertainment-glasses-serious-digital.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
